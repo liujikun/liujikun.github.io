@@ -46,7 +46,7 @@
           <h1 class="title is-1 publication-title">XMP-Font: Self-Supervised Cross-Modality Pre-training for Few-Shot Font Generation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <h3 style="color:#5a6268;">Technical Report 2022</h3>
+              <h3 style="color:#5a6268;">CVPR 2022</h3>
 
             <span class="author-block">
               <a href="https://liujikun.github.io/" target="_blank">Wei Liu</a>, </span>
@@ -151,17 +151,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Unconditional human image generation is an important task in vision and graphics, which enables various applications in the creative industry. 
-            Existing studies in this field mainly focus on "network engineering" such as designing new components and objective functions. 
-            This work takes a data-centric perspective and investigates multiple critical aspects in "data engineering", which we believe would complement 
-            the current practice. To facilitate a comprehensive study, we collect and annotate a large-scale human image dataset with over 230K samples 
-            capturing diverse poses and textures. Equipped with this large dataset, we rigorously investigate three essential factors in data engineering 
-            for StyleGAN-based human generation, namely data size, data distribution, and data alignment. Extensive experiments reveal several valuable 
-            observations w.r.t. these aspects: 
-            1) Large-scale data, more than 40K images, are needed to train a high-fidelity unconditional human generation model with vanilla StyleGAN. 
-            2) A balanced training set helps improve the generation quality with rare face poses compared to the long-tailed counterpart, whereas simply balancing the clothing texture distribution does not effectively bring an improvement. 
-            3) Human GAN models with body centers for alignment outperform models trained using face centers or pelvis points as alignment anchors. 
-            In addition, a model zoo and human editing applications are demonstrated to facilitate future research in the community.
+            Generating a new font library is a very labor-intensive and time-consuming job for glyph-rich scripts. Few-shot font generation is thus required, as it requires only a few glyph references without fine-tuning during test.
+Existing methods follow the style-content disentanglement paradigm and expect novel fonts to be produced by combining the style codes of the reference glyphs and the content representations of the source.
+However, these few-shot font generation methods either fail to capture content-independent style representations, or employ localized component-wise style representations, which is insufficient to model many Chinese font styles that involve hyper-component features such as inter-component spacing and ``connected-stroke". To resolve these drawbacks and make the style representations more reliable, we propose a self-supervised cross-modality pre-training strategy and a cross-modality transformer-based encoder that is conditioned jointly on the glyph image and the corresponding stroke labels. The cross-modality encoder is pre-trained in a self-supervised manner to allow effective capture of cross- and intra-modality correlations, which facilitates the content-style disentanglement and modeling style representations of all scales (stroke-level, component-level and character-level). The pre-trained encoder is then applied to the downstream font generation task without fine-tuning. Experimental comparisons of our method with state-of-the-art methods demonstrate our method successfully transfers styles of all scales. In addition, it only requires one reference glyph and achieves the lowest rate of bad cases in the few-shot font generation task (28\% lower than the second best).
           </p>
         </div>
       </div>
