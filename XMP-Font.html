@@ -202,7 +202,15 @@
       <!-- <img class="cover" id="mag"  src="images/XMP-font-demo.gif" style="width:1000px; margin-bottom:20px"> -->
       <img class="cover" id="mag"  src="images/xmp_framework.png" style="width:100%; margin-bottom:20px">
     </a>
-
+    <p>
+      <div class="box">(1) Pre-training stage: Pre-train a BERT-based cross-modal (text image and stroke order information) feature extraction model, and use the reconstruction loss and stroke prediction loss to ensure that the extracted font features can be extracted without losing information. Fully understand the relationship between strokes. In order to enable the model to understand the relationship between the picture and the corresponding Chinese character stroke order, we train on a large dataset with the following tasks:
+        <br />1. Predict the stroke order that is covered
+        <br />2. Image reconstruction
+        <br />When the pre-training phase is completed, Chinese characters in any font can be perfectly reconstructed, and the overlaid stroke order prediction accuracy rate can reach more than 80%.</div>
+    </p>
+    <p>
+      <div class="box">(2) Font generation stage: The features of the source domain word and the reference word are extracted respectively through the pre-trained feature extractor, and the decoupling and recombination is performed to finally generate the source domain word with the same font as the reference glyph. In this phase, the encoder of the pre-trained part is fixed, and only the decoupled network and decoder are trained.</div>
+    </p>
     <br>
     <br>
     <!-- Style-Mixing  -->
