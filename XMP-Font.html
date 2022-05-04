@@ -17,17 +17,13 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <script src="https://kit.fontawesome.com/ec39017701.js" crossorigin="anonymous"></script>
   <style>
-    p {
-        display: inline-block;
-        width: 300px;
-        text-align: justify;
-    }
-    
-    p:after {
-        display: inline-block;
-        content: '';
-        width: 100%;
-    }
+
+    .box{width: 400px;height: auto;text-align: justify;text-justify:inter-ideograph;}
+    p{font-family: 'Microsoft Yahei';line-height: 150%;
+        font-size: 12px;
+        /*letter-spacing:2px;*/
+        /*vertical-align: baseline;*/
+  }
   </style>
 
   <link rel="stylesheet"
@@ -164,19 +160,15 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Background</h2>
         <div class="content has-text-justified">
-          <div text-align: justify>
-            <div text-align-last:justify>
-              <img class="cover" id="mag"  src="images/xmp-teaser.png" style="width:100%; margin-bottom:20px">
-              <p>
-                <div class="text">A complete Chinese font includes tens of thousands of Chinese characters, hundreds of different Chinese character components and completely different arrangement and combination methods. 
-                This makes designing a set of Chinese fonts extremely costly in terms of manpower, time and money. 
-                However, because Chinese character fonts have strict requirements on the number, position and frame structure of strokes, general image translation models do not have a deep enough understanding of Chinese characters, 
-                and the frame structure of fonts is also a type of style information, which leads to the generation of most Chinese characters. 
-                The effect is not satisfactory. For some more difficult tasks, such as calligraphy font repair or when there are only a very small number of reference characters, the success rate of previous font generation methods is low. 
-                In order to solve this problem, the XMP-Font proposed by the ByteDance intelligent creation team achieved a breakthrough effect and was published in CVPR2022.</div>
-              </p>
-            </div>
-          </div>
+          <img class="cover" id="mag"  src="images/xmp-teaser.png" style="width:100%; margin-bottom:20px">
+          <p>
+            <div class="box">A complete Chinese font includes tens of thousands of Chinese characters, hundreds of different Chinese character components and completely different arrangement and combination methods. 
+            This makes designing a set of Chinese fonts extremely costly in terms of manpower, time and money. 
+            However, because Chinese character fonts have strict requirements on the number, position and frame structure of strokes, general image translation models do not have a deep enough understanding of Chinese characters, 
+            and the frame structure of fonts is also a type of style information, which leads to the generation of most Chinese characters. 
+            The effect is not satisfactory. For some more difficult tasks, such as calligraphy font repair or when there are only a very small number of reference characters, the success rate of previous font generation methods is low. 
+            In order to solve this problem, the XMP-Font proposed by the ByteDance intelligent creation team achieved a breakthrough effect and was published in CVPR2022.</div>
+          </p>
         </div>
       </div>
     </div>
