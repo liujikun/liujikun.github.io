@@ -19,20 +19,7 @@
   src: url(../fonts/竹林清韵体.ttf);
   font-weight: 100;
 }
-[class^="ai_icon-"], [class*=" ai_icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'academicons' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .ai {
 	display:inline-block;
 	font:normal normal normal 14px/1 Academicons;
